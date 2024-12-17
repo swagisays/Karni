@@ -24,7 +24,7 @@
 To install Karni, use `go get`:
 
 ```bash
-go get github.com/swagisays/karni
+go get github.com/swagisays/karni/karni
 
 ```
 ### Usage
@@ -33,18 +33,22 @@ Here's a quick example to get you started:
 
 ```go
 package main
+
 import (
 "fmt"
 "log"
 "github.com/swagisays/karni/karni"
 )
+
 func main() {
-err := karni.Connect("mongodb://localhost:27017", "yourDatabaseName")
-if err != nil {
-log.Fatalf("Failed to connect to MongoDB: %v", err)
-}
-fmt.Println("Connected to MongoDB successfully!")
-// Add your ODM operations here
+    err := karni.Connect("mongodb://localhost:27017", "yourDatabaseName")
+
+    if err != nil {
+        log.Fatalf("Failed to connect to MongoDB: %v", err)
+    }
+    
+    fmt.Println("Connected to MongoDB successfully!")
+    // Add your ODM operations here
 }
 ```
 
