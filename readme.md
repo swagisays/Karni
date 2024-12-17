@@ -31,8 +31,7 @@ go get github.com/swagisays/karni
 
 Here's a quick example to get you started:
 
-
-go
+```go
 package main
 import (
 "fmt"
@@ -47,7 +46,7 @@ log.Fatalf("Failed to connect to MongoDB: %v", err)
 fmt.Println("Connected to MongoDB successfully!")
 // Add your ODM operations here
 }
-
+```
 
 ## Documentation
 
