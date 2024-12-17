@@ -35,9 +35,9 @@ Here's a quick example to get you started:
 package main
 
 import (
-"fmt"
-"log"
-"github.com/swagisays/karni/karni"
+    "fmt"
+    "log"
+    "github.com/swagisays/karni/karni"
 )
 
 func main() {
