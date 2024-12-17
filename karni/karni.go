@@ -24,9 +24,10 @@ func createClient(uri string) (*mongo.Client, error) {
 func Connect(url string, name string) error {
 	client, err := createClient(url)
 	if err != nil {
-		return liberrors.WrapError(1002, "Failed to create MongoDB client", err)
+		return liberrors.WrapError(1001, "Failed to create MongoDB client", err)
 	}
 	db := client.Database(name)
 	global.SetDB(db)
+
 	return nil
 }
