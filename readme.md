@@ -26,7 +26,7 @@ To install Karni, use `go get`:
 ```bash
 go get github.com/swagisays/karni
 
-
+```
 ### Usage
 
 Here's a quick example to get you started:
