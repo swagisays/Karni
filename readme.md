@@ -1,6 +1,5 @@
 # Karni
 
-![Karni Logo](https://via.placeholder.com/150) <!-- Replace with actual logo URL -->
 
 ## Overview
 
@@ -20,11 +19,11 @@
 - Go 1.16 or later
 - MongoDB 4.0 or later
 
-### Installation
+## Installation
 
 To install Karni, use `go get`:
 
-bash
+```bash
 go get github.com/swagisays/karni
 
 
@@ -38,7 +37,7 @@ package main
 import (
 "fmt"
 "log"
-"github.com/yourusername/karni/karni"
+"github.com/swagisays/karni/karni"
 )
 func main() {
 err := karni.Connect("mongodb://localhost:27017", "yourDatabaseName")
@@ -52,11 +51,9 @@ fmt.Println("Connected to MongoDB successfully!")
 
 ## Documentation
 
-Comprehensive documentation is available on [GitHub Pages](https://yourusername.github.io/karni) <!-- Replace with actual URL -->
+Under development
 
-## Contributing
 
-We welcome contributions! Please see our `CONTRIBUTING.md` for more details.
 
 ## License
 
@@ -64,7 +61,7 @@ This project is licensed under the MIT License - see the `LICENSE` file for deta
 
 ## Contact
 
-For any inquiries, please contact [yourname@domain.com](mailto:yourname@domain.com).
+For any inquiries, please contact [swagisays@icloud.com](mailto:swagisays@icloud.com).
 
 ---
 
