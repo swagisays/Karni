@@ -5,7 +5,7 @@ import (
 )
 
 var userSchema = karni.Schema(map[string]karni.Field{
-	"email": {Type: karni.String, Required: true, Lowercase: true},
+	"email": {Type: karni.String, Required: true, Trim: true, Lowercase: true, Unique: true},
 	"password": {
 		Type: karni.String,
 	},

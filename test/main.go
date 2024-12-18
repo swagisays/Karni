@@ -12,13 +12,19 @@ func main() {
 	if err != nil {
 		fmt.Println(err)
 	}
+	fmt.Println("Connected to database")
 
 	User := model.InitUserModel()
 
 	data := map[string]interface{}{
-		"email":    "test@test.com",
+		"email":    "   TEST125@TEST.com   ",
 		"password": "12345678",
 	}
 	user := User.New(data)
-	user.Save()
+	result, err := user.Save()
+	if err != nil {
+		fmt.Println(err)
+	}
+	fmt.Println(result)
+	fmt.Println(user.Data)
 }
