@@ -24,7 +24,7 @@ func Model(collectionName string, schema *SchemaStruct) *ModelStruct {
 	opts := options.CreateCollection().SetValidator(validator)
 	err := db.CreateCollection(context.TODO(), collectionName, opts)
 	if err != nil {
-		fmt.Println(err)
+		// fmt.Println(err)
 
 	}
 	collection := db.Collection(collectionName)

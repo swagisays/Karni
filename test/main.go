@@ -2,6 +2,7 @@ package main
 
 import (
 	"fmt"
+	"time"
 
 	"github.com/swagisays/karni/karni"
 	"github.com/swagisays/karni/test/model"
@@ -17,8 +18,9 @@ func main() {
 	User := model.InitUserModel()
 
 	data := map[string]interface{}{
-		"email":    "   TEST125@TEST.com   ",
+		"email":    "   TEST1255@TEST.com   ",
 		"password": "12345678",
+		"date":     time.Now(),
 	}
 	user := User.New(data)
 	result, err := user.Save()

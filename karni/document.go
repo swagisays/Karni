@@ -36,21 +36,13 @@ func ProcessData(data map[string]interface{}, schema *SchemaStruct) map[string]i
 }
 
 func (d *Document) Save() (*mongo.InsertOneResult, error) {
-	// Process data using middleware
 	processedData := ProcessData(d.Data, d.model.schema)
 	collection := d.model.collection
 
 	result, err := collection.InsertOne(context.TODO(), bson.M(processedData))
 	if err != nil {
-		if mongo.IsDuplicateKeyError(err) {
-			wrappedErr := karniErrors.WrapError(1100, "Duplicate key error while creating document", err)
-			return nil, wrappedErr
-
-		} else {
-			wrappedErr := karniErrors.WrapError(1002, "Failed to create document", err)
-			return nil, wrappedErr
-
-		}
+		wrappedErr := karniErrors.HandleMongoValidationError(err)
+		return nil, wrappedErr
 	}
 	return result, nil
 }
