@@ -4,7 +4,7 @@ import (
 	"context"
 	"strings"
 
-	karniErrors "github.com/swagisays/karni/karni/errors"
+	karniErrors "github.com/swagisays/karni/lib/errors"
 	"go.mongodb.org/mongo-driver/bson"
 	"go.mongodb.org/mongo-driver/mongo"
 )

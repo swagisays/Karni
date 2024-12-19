@@ -24,7 +24,7 @@
 To install Karni, use `go get`:
 
 ```bash
-go get github.com/swagisays/karni/karni
+go get github.com/swagisays/Karni/lib
 
 ```
 ### Usage
@@ -37,7 +37,7 @@ package main
 import (
     "fmt"
     "log"
-    "github.com/swagisays/karni/karni"
+    "github.com/swagisays/Karni/lib"
 )
 
 func main() {

@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/swagisays/karni/karni"
+	karni "github.com/swagisays/karni/lib"
 	"github.com/swagisays/karni/test/model"
 )
 

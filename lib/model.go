@@ -5,7 +5,7 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/swagisays/karni/karni/global"
+	"github.com/swagisays/karni/lib/global"
 	"go.mongodb.org/mongo-driver/bson/primitive"
 	"go.mongodb.org/mongo-driver/mongo"
 	"go.mongodb.org/mongo-driver/mongo/options"

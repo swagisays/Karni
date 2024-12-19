@@ -1,7 +1,7 @@
 package model
 
 import (
-	"github.com/swagisays/karni/karni"
+	karni "github.com/swagisays/karni/lib"
 )
 
 var userSchema = karni.Schema(map[string]karni.Field{

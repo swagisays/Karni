@@ -4,8 +4,8 @@ import (
 	"context"
 	"time"
 
-	liberrors "github.com/swagisays/karni/karni/errors"
-	"github.com/swagisays/karni/karni/global"
+	liberrors "github.com/swagisays/karni/lib/errors"
+	"github.com/swagisays/karni/lib/global"
 	"go.mongodb.org/mongo-driver/mongo"
 	"go.mongodb.org/mongo-driver/mongo/options"
 )
